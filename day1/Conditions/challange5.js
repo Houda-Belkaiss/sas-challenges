@@ -1,16 +1,20 @@
 var prompt = require('prompt-sync')();
-let note = ('Entrez la note:');
+var note = +prompt('Entrez la note:');
+
 console.log('Note:',note);
-if (0 <note< 10) {
+if (note < 10 && note < 0) {
     console.log('Échec');
-}else if (10 <note< 11.99 ) {
+}else if (note>= 10 && note < 12) {
     console.log('Passable');
-}else if ( 12 <note< 13.99){
+}else if ( note>= 12 && note < 14 ){
     console.log('Assez bien');
-}else if (14 <note< 15.99) {
+}else if (note>= 14 && note < 16) {
     console.log('Bien');
-}else if (16 <note< 17.99) {
+}else if (note>= 16 && note < 18) {
     console.log('Très bien');
-}else if (18 <note< 20) {
+}else if (note>= 18 && note <= 20) {
     console.log('Excellent');
+}else{
+    console.log('note invalide');
+    
 }
