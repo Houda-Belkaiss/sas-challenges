@@ -8,10 +8,12 @@ let prompt = require('prompt-sync')();
 
 let n = +prompt('Number :');
 console.log('Résultat :',n);
-let i = n*n;
+let i = n * n;
 
-while ( i < 100){
+while ( i <= 100){
     n++;
-    console.log(i);   
+    
+    
+    
 }
-console.log(i);
+console.log(n ,'x',n ,' = ' ,i);
