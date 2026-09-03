@@ -1,8 +1,10 @@
 let prompt = require('prompt-sync')();
 let nom = prompt('nom:');
 let prenom = prompt('prenom:');
+let tlcnome = nom.toLowerCase();
+let tlcprenom = prenom.toLowerCase();
 
-function genererEmail( prenom ,nom){
-      return prenom + nom +"@entreprise.com";
+function genererEmail(tlcprenom,tlcnome){
+      return `${tlcprenom}${tlcnome}@entreprise.com`;
 }
-console.log(genererEmail(prenom,nom));
+console.log(genererEmail(tlcprenom,tlcnome));
