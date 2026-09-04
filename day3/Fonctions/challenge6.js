@@ -1,6 +1,16 @@
 
+// let motDePasse = ("codecode@1234");
+ let prompt = require('prompt-sync')();
+let inp = input();
+let vMotDePasse = verifierMotDePasse(inp);
+vMotDePasse ? console.log('true') : console.log('false');
 
-let motDePasse = ("codecode@1234");
+
+function input() {
+  let motDePasse = prompt('Entrez le mots de passe:');
+  return motDePasse;
+}
+
 function verifierMotDePasse(motDePasse){
     for (let i = 0; i < motDePasse.length; i++) {
         
@@ -11,4 +21,4 @@ function verifierMotDePasse(motDePasse){
      }
     }
      
-}console.log(verifierMotDePasse(motDePasse));
+}
