@@ -33,4 +33,9 @@ switch (trajet){
             
 }   totalPaye = passagers * prixBase;
 console.log('prix total:',totalPaye);
+if(passagers >= 5){
+    totalPaye = totalPaye * 0.15;
+}
+console.log(totalPaye);
+
      
