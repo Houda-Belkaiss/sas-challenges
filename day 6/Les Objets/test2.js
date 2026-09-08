@@ -85,17 +85,17 @@ function absenceRecordsWithName(students, absences){
 absenceRecordsWithName(students,absences);
  function findStudenthighestTotalNumberOfAbsences() {
     let max = 0;
-    let somme = 0;
+    
     for (let x in students) {
+        let somme = 0;
        for (let y in absences) {
-        if (students[x].id == absences[y].studentId) {
-             somme = absences[y].absences + somme;
-             
+        if (students.id == absences.studentId) {
+             somme = absences.absences + somme;   
         } 
      }   
-     console.log(somme);
+     console.log(`${students[x].name}:   ,Total absence: ,${somme}`);
     } 
 }
  findStudenthighestTotalNumberOfAbsences();
- 
+
  

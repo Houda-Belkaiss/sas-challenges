@@ -22,4 +22,8 @@ for(let i=0; i<students.length;i++){
 }
  console.log('les étudiants admis:',admis);
  console.log(' les étudiants non admis:',nonAdmis);
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> 68d43a203009cfc84c8666048ac0ac120931e3da
