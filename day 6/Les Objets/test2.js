@@ -77,11 +77,25 @@ function absenceRecordsWithName(students, absences){
      for (let x in students){ 
         for(let y in absences){
             if (students[x].id == absences[y].studentId) {
-              console.log(`Name:,${students[x].name}, subjectedId:${absences[y].subject}, Subject:${absences[y].subject},Absences:${absences[y].absences} `);
-                   
+              console.log(`Name:,${students[x].name}, subjectedId:${absences[y].subject}, Subject:${absences[y].subject},Absences:${absences[y].absences} `);     
             } 
         }     
     }       
-       }
-          
+       }      
 absenceRecordsWithName(students,absences);
+ function findStudenthighestTotalNumberOfAbsences() {
+    let max = 0;
+    let somme = 0;
+    for (let x in students) {
+       for (let y in absences) {
+        if (students[x].id == absences[y].studentId) {
+             somme = absences[y].absences + somme;
+             
+        } 
+     }   
+     console.log(somme);
+    } 
+}
+ findStudenthighestTotalNumberOfAbsences();
+ 
+ 
